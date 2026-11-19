@@ -84,7 +84,7 @@ describe("AgentCheckin", function () {
 
   it("Should return correct tokenURI with Agent Name", async function () {
     await mockRegistry.setBalance(holder.address, 1);
-    await mockRegistry.setName(holder.address, "AgentSmith");
+    await mockRegistry.setHandle(holder.address, "AgentSmith");
     await agentCheckin.connect(holder).checkIn();
     
     const uri = await agentCheckin.tokenURI(0);

@@ -85,7 +85,7 @@ contract AgentCheckin is ERC721Enumerable, Ownable, Pausable, ReentrancyGuard {
         
         string memory agentName = "Unknown";
         (bool success, bytes memory data) = address(registry).staticcall(
-            abi.encodeWithSignature("name(address)", owner)
+            abi.encodeWithSignature("handleOf(address)", owner)
         );
         if (success && data.length > 0) {
             try this._decodeName(data) returns (string memory decodedName) {
