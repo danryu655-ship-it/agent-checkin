@@ -1,0 +1,40 @@
+{
+  "name": "agent-checkin",
+  "version": "1.0.0",
+  "description": "Daily check-in badges for Agent ID holders — built for the Binance Agent ID Hackathon (60,000 USDC).",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "verify": "npx hardhat run scripts/verify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danryu655-ship-it/agent-checkin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danryu655-ship-it/agent-checkin/issues"
+  },
+  "homepage": "https://github.com/danryu655-ship-it/agent-checkin#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.2.2",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^3.1.5",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.6",
+    "chai": "^6.3.0",
+    "ethers": "^6.17.0",
+    "hardhat": "^3.22.0",
+    "mocha": "^12.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  },
+  "type": "module"
+}
